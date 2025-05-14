@@ -24,15 +24,12 @@
           <details>
             <summary>Profiles</summary>
             <ul class="bg-base-100 rounded-t-none p-2">
-              @if (Auth::guest())
-                <li><a href="{{ route('auth.login') }}">Login</a></li>
-                <li><a href="{{ route('auth.register') }}">SignUp</a></li>
-              @else
-                <form action="{{ route('admin.logout') }}" method="POST">
-                  @csrf
-                  <li><button type="submit">Logout</button></li>
-                </form>
-              @endif
+
+              <form action="{{ route('admin.logout') }}" method="POST">
+                @csrf
+                <li><button type="submit">Logout</button></li>
+              </form>
+
             </ul>
           </details>
         </li>

@@ -24,14 +24,14 @@ A secure and robust multi-authentication system for Laravel applications without
 
 ### Authentication
 1. User 
-  - Visit **/register** to create a new user account
-  - Visit **/login** to access their account
-  - After login, users are redirected to Dashboard **/dashboard**   
+  - Visit **/register** to create a new user account.
+  - Visit **/login** to access their account.
+  - After login, users are redirected to Dashboard **/dashboard**.   
 
 2. Admin
-  - Visit **/admin/login** to access the admin dashboard
-  - Use the **AdminSeeder** to create an admin account
-  - After login, admins are redirected to Admin Dashboard **/admin/dashboard**
+  - Visit **/admin/login** to access the admin dashboard.
+  - Use the **AdminSeeder** to create an admin account.
+  - After login redirect to **/admin/dashboard**.
 
 
 
