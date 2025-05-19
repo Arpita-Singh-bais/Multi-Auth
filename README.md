@@ -26,12 +26,22 @@ A secure and robust multi-authentication system for Laravel applications without
 1. User 
   - Visit **/register** to create a new user account.
   - Visit **/login** to access their account.
-  - After login, users are redirected to Dashboard **/dashboard**.   
+  - After login, users are redirected to Dashboard **/dashboard**. 
+  - somehow if user forget password, they can go to **/forget-password** to reset their password.
 
 2. Admin
   - Visit **/admin/login** to access the admin dashboard.
   - Use the **AdminSeeder** to create an admin account.
   - After login redirect to **/admin/dashboard**.
+
+### Forget Password
+- User can go to **/forget-password** to reset their password.
+- User will get a reset code on their email.
+- By the help of mailHog and other tools, we can see the reset code on the email.
+- User can reset their password by going to **/reset-password** and enter their new password.
+
+
+
 
 
 
