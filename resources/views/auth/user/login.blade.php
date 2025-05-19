@@ -23,15 +23,22 @@
           <span>{{ $message }}</span>
         </p>
       @enderror
-      <label class="label">
-        <input type="checkbox" name="remember" checked="checked" class="checkbox" />
-        Remember me
-      </label>
-      @error('remeber')
-        <p class="text-error">
-          <span>{{ $message }}</span>
-        </p>
-      @enderror
+      <div class="flex justify-between align-middle">
+        <div>
+          <label class="label">
+            <input type="checkbox" name="remember" checked="checked" class="checkbox" />
+            Remember me
+          </label>
+          @error('remeber')
+            <p class="text-error">
+              <span>{{ $message }}</span>
+            </p>
+          @enderror
+        </div>
+        <div>
+          <p class="label text-info"> <a href="{{ route('password.request') }}"> Forgot Password </a> </p>
+        </div>
+      </div>
       <button type="submit" class="btn btn-neutral mt-4">Login</button>
       <p class="label justify-center">Dont have account? <a class="text-info font-semibold" href="{{ route('auth.register') }}">Register</a>
       </p>
